@@ -10,9 +10,32 @@
         :root { --primary-red: #e11b22; --dark-blue: #002e5b; }
         body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; }
         
-        /* Navbar */
-        .navbar { background-color: white; border-bottom: 3px solid var(--primary-red); }
-        .navbar-brand { font-weight: bold; color: var(--dark-blue) !important; }
+       <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">HADAMU <span style="color: var(--primary-red);">SOLUTIONS</span></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold text-dark" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold text-dark" href="#projects">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold text-dark" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:0711094820" class="btn btn-danger btn-sm ms-lg-3 mt-2 mt-lg-0 fw-bold">Call Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
         
         /* Hero Section */
         .hero { 
@@ -131,6 +154,7 @@
 
 </body>
 </html>
+
 
 
 
