@@ -10,134 +10,87 @@
         :root { --primary-red: #e11b22; --dark-blue: #002e5b; }
         body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; }
         
-        /* Navbar Styling */
+        /* Navbar */
         .navbar { background-color: white; border-bottom: 3px solid var(--primary-red); }
         .navbar-brand { font-weight: bold; color: var(--dark-blue) !important; }
         
-        /* Hero Section (Singer style banner) */
+        /* Hero Section */
         .hero { 
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover; background-position: center;
-            color: white; padding: 100px 0; text-align: center;
+            background-size: cover; background-position: center; color: white; padding: 100px 0; text-align: center;
         }
-        .hero h1 { font-size: 3.5rem; font-weight: 800; text-transform: uppercase; }
 
-        /* Service Cards */
-        .service-card { 
-            transition: 0.3s; border: none; border-radius: 15px; overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1); background: white;
+        /* Portfolio Cards */
+        .card { transition: transform 0.3s; border: none; }
+        .card:hover { transform: translateY(-10px); }
+        .card-img-top { height: 200px; object-fit: cover; }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px;
+            background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center;
+            font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100;
         }
-        .service-card:hover { transform: translateY(-10px); }
-        .card-icon { font-size: 3rem; color: var(--primary-red); margin-bottom: 15px; }
-
-        /* Contact Bar */
-        .contact-bar { background: var(--dark-blue); color: white; padding: 20px 0; }
-        .btn-call { background: var(--primary-red); color: white; font-weight: bold; padding: 12px 30px; border-radius: 50px; text-decoration: none; }
-        .btn-call:hover { background: white; color: var(--primary-red); }
-
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-        
+        .whatsapp-float i { margin-top: 16px; }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">HADAMU <span style="color:var(--primary-red)">SOLUTIONS</span></a>
-        <div class="ms-auto">
-            <a href="tel:+94115400400" class="btn btn-outline-danger fw-bold">Call: 071 10 94 820</a>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">HADAMU <span style="color: var(--primary-red);">SOLUTIONS</span></a>
+            <div class="d-flex align-items-center">
+                <a href="tel:0711094820" class="btn btn-outline-danger btn-sm fw-bold">Call: 071 10 94 820</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<section class="container my-5" id="projects">
-    <h2 class="text-center mb-5" style="color: var(--dark-blue); font-weight: bold;">Our Latest Projects</h2>
-    <div class="row">
-        
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow border-0">
-                <img src="image_44f17e.png" class="card-img-top p-2" alt="Smart Cool Solutions">
-                <div class="card-body text-center">
-                    <h4 class="card-title" style="font-weight: bold;">Smart Cool Solutions</h4>
-                    <p class="card-text text-muted">AC Care System Management ඇප් එකක්.</p>
-                    <span class="badge bg-danger">Developed by Anura</span>
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">REACH BEYOND THE SKY</h1>
+            <p class="lead mb-4">අතිනවීන Web Application සහ Database විසඳුම් දැන් එකම තැනකින්.</p>
+            <a href="https://wa.me/94711094820" class="btn btn-danger btn-lg px-5">Contact Us</a>
+        </div>
+    </header>
+
+    <section class="container my-5" id="projects">
+        <h2 class="text-center mb-5 fw-bold" style="color: var(--dark-blue);">Our Latest Projects</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <img src="img1.png" class="card-img-top p-2" alt="Smart Cool Solutions">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold">Smart Cool Solutions</h4>
+                        <p class="text-muted small">AC Care System Management ඇප් එකක්. සේවා සහ ඉන්වොයිස් කළමනාකරණය මෙහි ඇත.</p>
+                        <span class="badge bg-danger">Developed by Anura</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow border-0">
-                <img src="image_44f13f.png" class="card-img-top p-2" alt="Kade Smart Book">
-                <div class="card-body text-center">
-                    <h4 class="card-title" style="font-weight: bold;">Kade Smart Book</h4>
-                    <p class="card-text text-muted">සිල්ලර වෙළඳසැල් සඳහා Cloud Sync පහසුකම් සහිත ඇප් එකකි.</p>
-                    <span class="badge bg-success">Live Support</span>
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <img src="img2.png" class="card-img-top p-2" alt="Kade Smart Book">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold">Kade Smart Book</h4>
+                        <p class="text-muted small">සිල්ලර වෙළඳසැල් සඳහා Cloud Sync පහසුකම් සහිත ඇප් එකකි.</p>
+                        <span class="badge bg-success">Live Support</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</section>
-    
-<section class="hero">
-    <div class="container">
-        <h1 class="display-3">REACH BEYOND THE SKY</h1>
-        <p class="lead">අතිනවීන Web Application සහ Database විසඳුම් දැන් එකම තැනකින්.</p>
-        <a href="#request" class="btn btn-danger btn-lg mt-3 fw-bold">GET STARTED</a>
-    </div>
-</section>
+        </div>
+    </section>
 
-<section class="container my-5">
-    <div class="text-center mb-5">
-        <h2 class="fw-bold" style="color:var(--dark-blue)">අපගේ සේවාවන්</h2>
-        <div style="width: 80px; height: 4px; background: var(--primary-red); margin: auto;"></div>
-    </div>
-    <div class="row g-4 text-center">
-        <div class="col-md-4">
-            <div class="service-card p-4">
-                <i class="fas fa-laptop-code card-icon"></i>
-                <h4>Web Design</h4>
-                <p>ඔබේ ව්‍යාපාරයට ගැළපෙන ආකර්ෂණීය වෙබ් අඩවි.</p>
-            </div>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Hadamu Web & App Solutions. All Rights Reserved.</p>
         </div>
-        <div class="col-md-4">
-            <div class="service-card p-4">
-                <i class="fas fa-mobile-alt card-icon"></i>
-                <h4>App Development</h4>
-                <p>Android සහ iOS සඳහා උසස් තත්ත්වයේ Mobile Apps.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card p-4">
-                <i class="fas fa-database card-icon"></i>
-                <h4>Database Solutions</h4>
-                <p>වඩාත් වේගවත් සහ ආරක්ෂිත දත්ත ගබඩා කිරීමේ පද්ධති.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </footer>
 
-<section class="contact-bar text-center" id="request">
-    <div class="container">
-        <h3>ඔබටත් ඇප් එකක් හෝ වෙබ් සයිට් එකක් අවශ්‍යද?</h3>
-        <p>අදම අප හා සම්බන්ධ වන්න. විශ්වාසනීය සේවාව.</p>
-        <div class="mt-4">
-            <a href="tel:+94711094820" class="btn-call mx-2"><i class="fas fa-phone-alt"></i> CALL NOW</a>
-            <a href="https://wa.me/+94711094820" class="btn btn-success rounded-pill px-4 py-2 mx-2"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
-        </div>
-    </div>
-</section>
-
-<footer class="text-center py-4 text-muted">
-    <p>&copy; 2026 Hadamu Solutions. All Rights Reserved.</p>
-</footer>
+    <a href="https://wa.me/94711094820?text=I%20want%20to%20know%20more%20about%20your%20services" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
-
-
-
