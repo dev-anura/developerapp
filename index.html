@@ -189,25 +189,43 @@
     <a href="https://wa.me/94711094820?text=I%20want%20to%20know%20more%20about%20your%20services" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-<section class="container mt-5" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
-    <h3 class="mb-4">අදහස් දක්වන්න (Leave a Comment)</h3>
-    <form action="https://formspree.io/f/meerodzq" method="POST">
-        <div class="mb-3">
-            <label for="name" class="form-label">ඔබේ නම:</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="ඔබේ නම මෙහි ලියන්න" required>
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white p-3">
+                    <h5 class="mb-0"><i class="fas fa-comments me-2"></i>අදහස් දක්වන්න (Leave a Comment)</h5>
+                </div>
+                <div class="card-body p-4">
+                    <form action="https://formspree.io/f/meerodzq" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold text-secondary">ඔබේ නම</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-user text-muted"></i></span>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="ඔබේ නම මෙහි ලියන්න" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-bold text-secondary">ඔබේ අදහස</label>
+                            <textarea name="message" id="message" class="form-control" rows="5" placeholder="ඔබේ අදහස හෝ වටිනා පණිවිඩය මෙහි ලියන්න..." required style="resize: none;"></textarea>
+                        </div>
+
+                        <input type="hidden" name="_next" value="https://dev-anura.github.io/developerapp/">
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg shadow-sm">
+                                <i class="fas fa-paper-plane me-2"></i>පණිවිඩය යවන්න
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">ඔබේ අදහස:</label>
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="ඔබේ අදහස හෝ පණිවිඩය මෙහි ලියන්න..." required></textarea>
-        </div>
-        <input type="hidden" name="_next" value="https://dev-anura.github.io/developerapp/">
-        
-        <button type="submit" class="btn btn-primary w-100">පණිවිඩය යවන්න (Submit)</button>
-    </form>
+    </div>
 </section>
 
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 
 
